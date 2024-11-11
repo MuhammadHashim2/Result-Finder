@@ -29,3 +29,15 @@ function values(){
    
     
 }
+document.querySelector(".form").addEventListener("mouseover",animate);
+function animate(){
+    document.querySelector(".form").setAttribute("class","animate__animated animate__pulse form");
+}
+
+var input = document.getElementById("number");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("myBtn").click();
+  }
+});
